@@ -18,7 +18,7 @@ gem 'ocr_challenge'
 
 ### Usage
 
-1. Create a parser with your input String
+1.) Create a parser with your input String
 
 ```ruby
 require 'ocr_challenge'
@@ -33,13 +33,13 @@ text = """
 parser = IBusinessCardParser.new(text)
 ```
 
-2. Send the parser on over to the IContactInfo class
+2.) Send the parser on over to the IContactInfo class
 
 ```ruby
 contact = IContactInfo.new(parser)
 ```
 
-3. Get the information through your contact instance
+3.) Get the information through your contact instance
 
 ```ruby
 contact.get_name            # =>  "Name: Alexander Vanadio"
