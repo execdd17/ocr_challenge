@@ -4,8 +4,6 @@ class OcrChallenge::IContactInfo
     @parser = parser
   end
 
-  #TODO: switch this to use ghost methods
-
   def get_name
     @parser.parse_names("/home/alex/git_repos/ocr_challenge/names").first
   end

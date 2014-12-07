@@ -4,7 +4,7 @@ class OcrChallenge::IBusinessCardParser
   include OcrChallenge::NameParser
 
   def initialize(document)
-    @lines = document.split("\n")
+    @lines = document.split("\n").reject { |line| line.empty? }
   end
 
   def self.get_contact_info(document)
