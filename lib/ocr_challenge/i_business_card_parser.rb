@@ -1,5 +1,5 @@
 class OcrChallenge::IBusinessCardParser
-  include OcrChallenge::LandAndCellNumberParser
+  include OcrChallenge::BasicLandAndCellNumberParser
   include OcrChallenge::EmailParser
   include OcrChallenge::NameParser
 
