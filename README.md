@@ -68,8 +68,8 @@ contact.to_s # => "Name: Alexander Vanadio\nEmail: anotherEmail@gmail.com\nEmail
 
 # you can also access the names, email_addresses, and phone_numbers directly
 contact.names               # => ["Alexander Vanadio"]
-contact.email_addresses     # => ["123-444-7890", "123-456-7890"]
-contact.phone_numbers       # => ["anotherEmail@gmail.com", "execdd17@gmail.com"]
+contact.email_addresses     # => ["anotherEmail@gmail.com", "execdd17@gmail.com"]
+contact.phone_numbers       # => ["123-444-7890", "123-456-7890"]
 ```
 
 ### Running Tests and Code Coverage
