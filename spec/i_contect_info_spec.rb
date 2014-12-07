@@ -3,7 +3,7 @@ require 'spec_helper'
 describe IContactInfo do
 
   let(:full_name)  { " Alexander Vanadio \n" }
-  let(:email)      { " execdd17@gmail.com \n" }
+  let(:email)      { " Email: execdd17@gmail.com \n" }
   let(:phone)      { " 410.349.7308 \n" }
   let(:blank_line) { " \n" }
 
@@ -19,7 +19,7 @@ describe IContactInfo do
   end
 
   it 'returns the correct email' do
-    subject.get_email_address.should eq email.strip
+    subject.get_email_address.should eq "execdd17@gmail.com"
   end
 
   it 'returns the correct phone number' do
