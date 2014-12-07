@@ -1,5 +1,4 @@
 $:.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$:.unshift(File.join(File.dirname(__FILE__), '..', 'lib/ocr_challenge'))
 
 # the project namespace
 module OcrChallenge; end
