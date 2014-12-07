@@ -1,6 +1,6 @@
 class OcrChallenge::IContactInfo
 
-  attr_reader :name, :email_addresses, :phone_numbers
+  attr_reader :names, :email_addresses, :phone_numbers
 
   def initialize(parser, list_of_names_dir='names')
     @parser           = parser
@@ -13,7 +13,7 @@ class OcrChallenge::IContactInfo
   # example, maybe there were multiple points of contact for a given company card.
   # Since the challenge did not specify, I take the first one.
   def get_name
-    "Name: #{name.first}"
+    "Name: #{names.first}"
   end
 
   # NOTE: the programming challenge does not account for multiple email addresses,
