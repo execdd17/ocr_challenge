@@ -24,10 +24,11 @@ gem 'ocr_challenge'
 require 'ocr_challenge'
 include OcrChallenge
 
-text =
-    "Alexander Vanadio\n
+text = """
+    Alexander Vanadio\n
     execdd17@gmail.com\n
-    (123)-456-7890\n"
+    (123)-456-7890\n
+"""
 
 parser = IBusinessCardParser.new(text)
 ```
@@ -38,7 +39,7 @@ parser = IBusinessCardParser.new(text)
 contact = IContactInfo.new(parser)
 ```
 
-3. Get the info
+3. Get the information through your contact instance
 
 ```ruby
 contact.get_name            # =>  "Name: Alexander Vanadio"
