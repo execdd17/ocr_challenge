@@ -6,7 +6,7 @@ module OcrChallenge::TenDigitTelecomParser
   BASIC_NUMBER_REGEX = /[\d]{3}[^\d]*[\d]{3}[^\d]*[\d]{4}/
 
   def get_matches
-    @lines.select do |line|
+    lines.select do |line|
       line =~ BASIC_NUMBER_REGEX
     end
   end

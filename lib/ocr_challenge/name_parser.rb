@@ -11,7 +11,7 @@ module OcrChallenge::NameParser
     names_dir = Pathname.new(dir_path)
     name_files= names_dir.children
 
-    preprocessed_lines = @lines.map(&:strip).reject do |line|
+    preprocessed_lines = lines.map(&:strip).reject do |line|
       line =~ /\d/    # names shouldn't have digits in them
     end
 

@@ -4,7 +4,7 @@ module OcrChallenge::EmailParser
   EMAIL_REGEX = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i
 
   def get_email_addresses
-    @lines.inject(Array.new) do |email_addresses, line|
+    lines.inject(Array.new) do |email_addresses, line|
       line = line.strip
 
       if offset = line =~ EMAIL_REGEX

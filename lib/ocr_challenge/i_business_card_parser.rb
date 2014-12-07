@@ -11,4 +11,8 @@ class OcrChallenge::IBusinessCardParser
     parser = self.new(document)
     IContactInfo.new(parser)
   end
+
+  private
+
+  attr_reader :lines
 end
