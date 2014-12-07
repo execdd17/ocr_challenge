@@ -4,6 +4,7 @@ require 'pathname'
 # use a dictionary of names in combination with eliminating lines with digits.
 module OcrChallenge::NameParser
 
+  # Note: the name files are expected to be new line separated names
   def parse_names(dir_path)
 
     #TODO: catch IO exception
@@ -19,7 +20,7 @@ module OcrChallenge::NameParser
       name_files.any? do |file|
         name_lines = file.readlines
         name_lines.any? do |name_line|
-          line.downcase =~ Regexp.new(name_line.chop)
+          line.downcase =~ Regexp.new(name_line.downcase.chop)
         end
       end
     end

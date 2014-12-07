@@ -10,7 +10,7 @@ module OcrChallenge::LandAndCellNumberParser
     matching_lines = get_matches
 
     phone_number_lines = matching_lines.reject do |line|
-      is_fax?(line)
+      is_fax_number?(line)
     end
 
     phone_number_lines.map do |line|
@@ -20,7 +20,7 @@ module OcrChallenge::LandAndCellNumberParser
 
   private
 
-  def is_fax?(line)
+  def is_fax_number?(line)
     line =~ FAX_REGEX
   end
 end
