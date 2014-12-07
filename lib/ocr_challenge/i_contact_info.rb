@@ -29,7 +29,17 @@ class OcrChallenge::IContactInfo
   end
 
   def to_s
-    [get_name, get_email_address, get_phone_number].join("\n")
+    contact_as_string = ""
+
+    {Name: names, Email: email_addresses,
+     "Phone Number" => phone_numbers}.each_pair do |label, values|
+
+      values.each do |value|
+        contact_as_string << "#{label}: #{value}\n"
+      end
+    end
+
+    contact_as_string
   end
 
 end

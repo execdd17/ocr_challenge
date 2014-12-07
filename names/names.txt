@@ -1,4 +1,3 @@
-a
 aaliyah
 aaron
 abagail
@@ -388,7 +387,6 @@ ayanna
 ayden
 ayla
 aylin
-b
 baby
 bailee
 bailey
@@ -603,7 +601,6 @@ burton
 buster
 butch
 byron
-c
 cade
 caden
 caesar
@@ -929,7 +926,6 @@ cyndi
 cynthia
 cyril
 cyrus
-d
 dagmar
 dagny
 daija
@@ -1247,7 +1243,6 @@ dwayne
 dwight
 dylan
 dylon
-e
 earl
 earle
 earlene
@@ -1493,7 +1488,6 @@ ezekiel
 ezell
 ezequiel
 ezra
-f
 fabian
 fabiola
 fae
@@ -1586,7 +1580,6 @@ frieda
 friedrich
 fritz
 furman
-g
 gabriel
 gabriela
 gabriella
@@ -1741,7 +1734,6 @@ gustavo
 guy
 gwen
 gwendolyn
-h
 hadley
 hailee
 hailey
@@ -1871,7 +1863,6 @@ hunter
 hurley
 huston
 hyman
-i
 ian
 ibrahim
 icie
@@ -1943,7 +1934,6 @@ izabella
 izaiah
 izetta
 izora
-j
 jabari
 jacalyn
 jace
@@ -2262,7 +2252,6 @@ juston
 justus
 justyn
 juwan
-k
 kacey
 kaci
 kacie
@@ -2521,7 +2510,6 @@ kyleigh
 kyler
 kylie
 kyra
-l
 lacey
 laci
 lacie
@@ -2822,7 +2810,6 @@ lynnette
 lynsey
 lynwood
 lyric
-m
 mabel
 mabelle
 mable
@@ -3199,7 +3186,6 @@ myrtice
 myrtie
 myrtis
 myrtle
-n
 nadia
 nadine
 najee
@@ -3318,7 +3304,6 @@ nya
 nyah
 nyasia
 nydia
-o
 oakley
 obie
 ocie
@@ -3387,7 +3372,6 @@ ouida
 ova
 owen
 ozella
-p
 pablo
 paige
 palma
@@ -3481,7 +3465,6 @@ quinn
 quinten
 quintin
 quinton
-r
 rachael
 racheal
 rachel
@@ -3726,7 +3709,6 @@ ryleigh
 ryley
 rylie
 ryne
-s
 sabastian
 sabina
 sabrina
@@ -3985,7 +3967,6 @@ syed
 sylvan
 sylvester
 sylvia
-t
 tabatha
 tabitha
 tad
@@ -4202,7 +4183,6 @@ urban
 uriah
 uriel
 ursula
-v
 vada
 val
 valarie
@@ -4286,7 +4266,6 @@ vivienne
 von
 vonda
 vonnie
-w
 wade
 waino
 waldemar

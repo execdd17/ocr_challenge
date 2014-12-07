@@ -41,5 +41,40 @@ contact = IContactInfo.new(parser)
 3. Get the info
 
 ```ruby
-contact.to_s # =>
+contact.get_name            # =>  "Name: Alexander Vanadio"
+contact.get_email_address   # => "Email: execdd17@gmail.com"
+contact.get_phone_number    # => "Phone: 123-456-7890"
+
+contact.to_s # => "Name: Alexander Vanadio\nEmail: execdd17@gmail.com\nPhone: 123-456-7890"
 ```
+
+### Advanced Usage
+
+Let's use a more complicated String input. The IBusinessCard parser will attempt to find all email addresses and phone numbers, but not fax numbers.Once it does, you can get them directly from your IContactInfo instance.
+
+```ruby
+require 'ocr_challenge'
+include OcrChallenge
+
+text = """
+    Alexander Vanadio\n
+    Software Engineer
+    My Company Name
+    execdd17@gmail.com\n
+    anotherEmail@gmail.com\n
+    Phone: 1-(123)-456-7890\n
+    Cell: 123.444.7890\n
+    Fax: 892-234-5467
+"""
+
+parser  = IBusinessCardParser.new(text)
+contact = IContactInfo.new(parser)
+
+contact.to_s # => "Name: Alexander Vanadio\nEmail: anotherEmail@gmail.com\nEmail: execdd17@gmail.com\nPhone Number: 123-444-7890\nPhone Number: 123-456-7890\n"
+
+# you can also access the names, email_addresses, and phone_numbers directly
+contact.names
+contact.email_addresses
+contact.phone_numbers
+```
+

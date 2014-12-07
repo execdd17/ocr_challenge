@@ -20,7 +20,7 @@ module OcrChallenge::NameParser
       name_files.any? do |file|
         name_lines = file.readlines
         name_lines.any? do |name_line|
-          line.downcase =~ Regexp.new(name_line.downcase.chop)
+          line.downcase =~ /\b#{name_line.downcase.chomp}\b/
         end
       end
     end

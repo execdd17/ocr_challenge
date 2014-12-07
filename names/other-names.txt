@@ -1,9 +1,3 @@
-# Various names of people (usually) whose gender it is
-# difficult to determine.
-#
-# From Bob Baldwin's collection from MIT
-# Augmented by Matt Bishop and Daniel Klein
-#
 abacus
 abasolo
 abbai
