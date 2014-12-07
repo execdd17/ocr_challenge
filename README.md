@@ -75,7 +75,7 @@ contact.phone_numbers       # => ["123-444-7890", "123-456-7890"]
 ### Running Tests and Code Coverage
 
 ```bash
-cd orc_challenge
+cd ocr_challenge
 rspec
 firefox coverage/index.html
 ```
