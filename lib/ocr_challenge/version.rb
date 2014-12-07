@@ -1,0 +1,1 @@
+OcrChallenge::VERSION = 1.0

@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    ocr_challenge (1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,6 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  faker
-  rspec
-  simplecov
+  faker (~> 1.4)
+  ocr_challenge!
+  rspec (~> 2.14)
+  simplecov (~> 0.8)
