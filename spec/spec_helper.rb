@@ -9,8 +9,9 @@ RSpec.configure do |config|
   config.color = true
 end
 
-require 'faker'
 require 'ocr_challenge'
+require 'faker'
+
 include OcrChallenge
 
 SAMPLE_SIZE = 1_000

@@ -1,1 +1,3 @@
-OcrChallenge::VERSION = 1.0
+module OcrChallenge
+  VERSION = 1.0
+end

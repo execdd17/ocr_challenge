@@ -1,6 +1,6 @@
 $:.unshift File.expand_path('../lib', __FILE__)
 
-require 'ocr_challenge'
+require 'ocr_challenge/version'
 
 Gem::Specification.new do |s|
   s.name = 'ocr_challenge'
@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- spec/*`.split("\n")
   s.require_paths = ['lib']
-  s.add_development_dependency('rspec', '~> 2.14')
-  s.add_development_dependency('simplecov', '~> 0.8')
+  s.add_development_dependency('rspec', '~> 2.99')
+  s.add_development_dependency('simplecov', '~> 0.9')
   s.add_development_dependency('faker', '~> 1.4')
   s.license = 'MIT'
 end
