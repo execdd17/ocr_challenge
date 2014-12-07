@@ -3,13 +3,13 @@ class OcrChallenge::IBusinessCardParser
   include OcrChallenge::EmailParser
   include OcrChallenge::NameParser
 
-  def initialize(document)
-    @lines = document.split("\n").reject { |line| line.empty? }
+  def self.get_contact_info(document)
+    parser = new(document)
+    IContactInfo.new(parser)
   end
 
-  def self.get_contact_info(document)
-    parser = self.new(document)
-    IContactInfo.new(parser)
+  def initialize(document)
+    @lines = document.split("\n").reject { |line| line.empty? }
   end
 
   private

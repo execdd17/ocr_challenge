@@ -18,7 +18,7 @@ gem 'ocr_challenge'
 
 ### Usage
 
-1.) Create a parser with your input String
+1.) Create a contact with your input String
 
 ```ruby
 require 'ocr_challenge'
@@ -30,16 +30,10 @@ text = """
     (123)-456-7890\n
 """
 
-parser = IBusinessCardParser.new(text)
+contact = IBusinessCardParser.get_contact_info(text)
 ```
 
-2.) Send the parser on over to the IContactInfo class
-
-```ruby
-contact = IContactInfo.new(parser)
-```
-
-3.) Get the information through your contact instance
+2.) Get the information through your contact instance
 
 ```ruby
 contact.get_name            # =>  "Name: Alexander Vanadio"
@@ -68,15 +62,14 @@ text = """
     Fax: 892-234-5467
 """
 
-parser  = IBusinessCardParser.new(text)
-contact = IContactInfo.new(parser)
+contact = IBusinessCardParser.get_contact_info(text)
 
 contact.to_s # => "Name: Alexander Vanadio\nEmail: anotherEmail@gmail.com\nEmail: execdd17@gmail.com\nPhone Number: 123-444-7890\nPhone Number: 123-456-7890\n"
 
 # you can also access the names, email_addresses, and phone_numbers directly
-contact.names
-contact.email_addresses
-contact.phone_numbers
+contact.names               # => ["Alexander Vanadio"]
+contact.email_addresses     # => ["123-444-7890", "123-456-7890"]
+contact.phone_numbers       # => ["anotherEmail@gmail.com", "execdd17@gmail.com"]
 ```
 
 ### Running Tests and Code Coverage
