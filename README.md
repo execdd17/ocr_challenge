@@ -24,13 +24,12 @@ gem 'ocr_challenge'
 require 'ocr_challenge'
 include OcrChallenge
 
-lines = [
-    "Alexander Vanadio\n",
-    "execdd17@gmail.com\n",
-    "(123)-456-7890\n"
-]
+text =
+    "Alexander Vanadio\n
+    execdd17@gmail.com\n
+    (123)-456-7890\n"
 
-parser = IBusinessCardParser.new(lines)
+parser = IBusinessCardParser.new(text)
 ```
 
 2. Send the parser on over to the IContactInfo class

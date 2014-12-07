@@ -4,13 +4,16 @@ class OcrChallenge::IContactInfo
 
   def initialize(parser, list_of_names_dir='names')
     @parser           = parser
-    @name             = @parser.parse_names(list_of_names_dir)
+    @names            = @parser.parse_names(list_of_names_dir)
     @email_addresses  = @parser.parse_email_addresses
     @phone_numbers    = @parser.parse_phone_numbers
   end
 
+  # NOTE: perhaps unlikely, but a business card may have more than one name. For
+  # example, maybe there were multiple points of contact for a given company card.
+  # Since the challenge did not specify, I take the first one.
   def get_name
-    "Name: #{name}"
+    "Name: #{name.first}"
   end
 
   # NOTE: the programming challenge does not account for multiple email addresses,
