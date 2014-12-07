@@ -51,7 +51,7 @@ contact.to_s # => "Name: Alexander Vanadio\nEmail: execdd17@gmail.com\nPhone: 12
 
 ### Advanced Usage
 
-Let's use a more complicated String input. The IBusinessCard parser will attempt to find all email addresses and phone numbers, but not fax numbers.Once it does, you can get them directly from your IContactInfo instance.
+Let's use a more complicated String input. The IBusinessCard parser will attempt to find all email addresses and phone numbers, but not fax numbers. Once it does, you can get them directly from your IContactInfo instance.
 
 ```ruby
 require 'ocr_challenge'
