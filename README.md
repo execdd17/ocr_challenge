@@ -78,3 +78,10 @@ contact.email_addresses
 contact.phone_numbers
 ```
 
+### Running Tests and Code Coverage
+
+```bash
+cd orc_challenge
+rspec
+firefox coverage/index.html
+```
